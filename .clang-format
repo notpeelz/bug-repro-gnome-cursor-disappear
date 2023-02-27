@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://json.schemastore.org/clang-format.json
+---
+BasedOnStyle: Chromium
+AllowShortIfStatementsOnASingleLine: WithoutElse
+ContinuationIndentWidth: 2
+IndentWidth: 2
+InsertBraces: true
+BinPackParameters: false
+BinPackArguments: false
+AlignAfterOpenBracket: BlockIndent
+PenaltyReturnTypeOnItsOwnLine: 1000
