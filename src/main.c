@@ -367,6 +367,10 @@ static void cleanup(struct window* window) {
     );
   }
 
+  if (window->client->cursor_surface) {
+    wl_surface_destroy(window->client->cursor_surface);
+  }
+
   if (window->egl_surface) {
     eglDestroySurface(window->client->egl_display, window->egl_surface);
   }
